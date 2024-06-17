@@ -154,6 +154,9 @@ function getProductCart(product) {
 
     return cart;
 }
+// function checkOutButton(cart){
+//     cart.innerText='';
+// }
 
 function renderProducts() {
     const productlistContainer = document.getElementById("product-list");
@@ -162,6 +165,11 @@ function renderProducts() {
         // Render each product
         const productCart = getProductCart(product);
         productlistContainer.appendChild(productCart);
+
+        const checkOut = document.getElementById('checkout-btn');
+        checkOut.addEventListener('click', function (productlistContainer){
+            productlistContainer.innerText='';
+        })
     });
 }
 
