@@ -166,10 +166,10 @@ function renderProducts() {
         const productCart = getProductCart(product);
         productlistContainer.appendChild(productCart);
 
-        const checkOut = document.getElementById('checkout-btn');
-        checkOut.addEventListener('click', function (productlistContainer){
-            productlistContainer.innerText='';
-        })
+        // const checkOut = document.getElementById('checkout-btn');
+        // checkOut.addEventListener('click', function (productlistContainer){
+        //     productlistContainer.innerText='';
+        // })
     });
 }
 
